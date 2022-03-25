@@ -1,0 +1,25 @@
+@use '../1-base/variables'
+@use '../1-base/_mobile-pequeno'
+
+header
+    max-width: 1290px
+    height: 64px
+    background-color: variables.$white-color
+    .header-container
+        padding: 18px
+        
+        
+        &-links
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+
+            @include mobile-pequeno.mobile
+                h1
+                    font-size: 17px
+
+            i
+                font-size: 22px
+        img
+            margin-top: 2px
+

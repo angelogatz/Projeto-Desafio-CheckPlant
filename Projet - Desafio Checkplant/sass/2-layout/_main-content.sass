@@ -1,0 +1,88 @@
+@use '../1-base/variables'
+@use '../1-base/_mobile-medio'
+@use '../1-base/_mobile-pequeno'
+.section-cards
+    position: relative
+    left: 415px
+    top: 66px
+
+    @include mobile-medio.mobile
+        left: 304px
+        width: 280px
+
+    @include mobile-pequeno.mobile
+        top: 92px
+        left: 0
+        width: 390px
+        
+        
+
+    h1
+        margin-top: -36px
+        margin-bottom: 8px
+        margin-left: 17px
+    
+    &-container
+        display: flex
+        flex-direction: row
+
+        @include mobile-medio.mobile
+            width: 100px
+            
+
+        @include mobile-medio.mobile
+            flex-direction: column
+
+        @include mobile-pequeno.mobile
+            width: 390px
+        
+
+    .section-card
+        display: flex
+        flex-direction: column
+        margin: 0 16px
+
+        @include mobile-medio.mobile
+            width: 100px
+        
+
+        h2
+            font-weight: 700
+            font-size: 16px
+            margin: 0 0 16px
+
+            
+
+        .section-card-links
+            width: 380px
+            height: auto
+            padding: 19px 10px
+            border-radius: 8px
+            align-items: center
+            background-color: variables.$white-color
+            box-shadow: 1px 1px 2px 1px #d4d4d499
+
+            @include mobile-medio.mobile
+                margin-top: 16px
+                width: 432px
+
+            @include mobile-pequeno.mobile
+                width: 390px
+            
+
+            p
+                margin: 8px 0 16px
+            
+            img
+                border-radius: 5px
+        
+        .images
+            display: flex
+            flex-direction: row
+            column-gap: 16px
+            left: 0
+            
+            
+
+    
+                

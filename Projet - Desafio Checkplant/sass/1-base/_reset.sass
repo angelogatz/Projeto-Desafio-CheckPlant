@@ -1,0 +1,55 @@
+@use 'variables'
+@use '../1-base/mobile-medio'
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    overflow-x: hidden
+
+    @include mobile-medio.mobile
+        overflow-x: hidden
+
+html
+    font-family: 'Inter'
+    scroll-behavior: smooth
+
+
+    
+
+a
+    text-decoration: none
+
+ul
+    list-style: none
+
+h1
+    color: variables.$title-color
+    font-size: 24px
+    
+
+h2
+    color: variables.$title-color
+    font-size: 12px
+
+h3
+    color: variables.$lidht-span-icon-color
+    font-weight: 400
+    font-size: 16px
+    text-transform: uppercase
+
+h4
+    font-size: 16px
+    font-weight: 400
+    color: variables.$lidht-span-icon-color
+
+span
+    color: variables.$lidht-span-icon-color
+    font-size: 12px
+    font-weight: 400
+
+p
+    color: variables.$lidht-span-icon-color
+    font-size: 14px

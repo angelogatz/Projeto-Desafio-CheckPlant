@@ -1,0 +1,131 @@
+@use '../1-base/variables'
+@use '../1-base/_mobile-medio'
+@use '../1-base/_mobile-pequeno'
+
+.sidebar
+    display: flex
+    position: relative
+    
+    &-container
+        position: absolute
+        display: flex
+        flex-direction: column
+        background-color: variables.$white-color
+        width: 248px
+        height: 482px
+        top: 66px
+        left: 143px
+        border-radius: 8px
+        box-shadow: 1px 1px 2px 1px #d4d4d499
+        justify-content: flex-start
+        align-items: center
+
+        @include mobile-medio.mobile
+            left: 42px
+
+        @include mobile-pequeno.mobile
+            position: relative
+            width: 393px
+            height: 395px
+            top: 40px
+            left: 16px
+
+        
+
+        &-links-top
+            display: flex
+            flex-direction: column
+            width: 100%
+            margin-left: 29px
+            margin-top: 16px
+
+            .divisor
+                margin-left: -15px
+
+
+        &-links-meio
+            display: flex
+            flex-direction: column
+            width: 100%
+            margin-left: -20px
+
+
+            .first-side-bar
+                display: flex
+                justify-content: space-around
+
+                @include mobile-pequeno.mobile
+                    margin-left: -39px
+
+                &-content
+                    display: flex
+
+
+            @include mobile-pequeno.mobile
+                .row
+                    display: flex
+                    flex-direction: row
+                    justify-content: space-evenly       
+
+            .second-sidebar
+                display: flex
+                justify-content: space-evenly
+                margin-left: -18px
+
+                @include mobile-pequeno.mobile
+                    margin-left: 0
+
+                p
+                    background-color: #e5e5e5
+                    width: 32px
+                    height: 32px
+                    text-align: center
+                    line-height: 2.3
+                    border-radius: 50%
+                    color: variables.$lidht-span-icon-color
+
+                    @include mobile-pequeno.mobile
+                        margin-left: 10px
+            
+            .third-sidebar
+                display: flex
+                margin-left: 24px
+
+                i
+                    color: #1854C4
+
+                h4
+                    color: variables.$title-color
+                    font-weight: bold
+
+        
+                    
+
+    .sidebar-bottom-container
+        display: block       
+
+        &-links
+            text-align: left
+            margin-left: 14px  
+                    
+                
+                    
+                
+
+            
+
+        
+
+        p
+            font-size: 14px
+
+
+    
+.divisor
+    border-bottom: 1px solid #e0e0e099
+    
+    width: 100%
+    margin-bottom: 16px
+    margin-top: 16px
+
+
